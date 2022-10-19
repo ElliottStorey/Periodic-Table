@@ -9,8 +9,19 @@ import Button from '@mui/material/Button';
 export default function Login() {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
+
+  function checkLogin() {
+    if (localStorage.getItem('username') === username && localStorage.getItem('password') === password) {
+      window.location = '/table';
+    } else {
+      setUsername('');
+      setPassword('');
+      alert('Try again');
+    }
+  }
+
   return (
-    <Card>
+    <Card style={{marginTop:'10%'}}>
       <CardContent>
         <Typography variant='h4'>Login</Typography>
         <br />
@@ -18,7 +29,7 @@ export default function Login() {
         <TextField value={password} onChange={(e) => {setPassword(e.target.value)}} label='Password' type='password' />
       </CardContent>
       <CardActions>
-        <Button href='/table'>Login</Button>
+        <Button onClick={() => checkLogin()}>Login</Button>
         <Button href='/signup'>Create Account</Button>
       </CardActions>
     </Card>

@@ -10,9 +10,24 @@ export default function Signup() {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
+
+  function saveAccount() {
+    if (password === confirmPassword) {
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+      alert('Account Created');
+      window.location = '/';
+    } else {
+      setUsername('');
+      setPassword('');
+      setConfirmPassword('');
+      alert('Passwords do not match');
+    }
+  }
+
   return (
     <Card>
-      <CardContent>
+      <CardContent style={{marginTop:'10%'}}>
         <Typography variant='h4'>Signup</Typography>
         <br />
         <TextField value={username} onChange={(e) => {setUsername(e.target.value)}} label='Username' />
@@ -20,7 +35,7 @@ export default function Signup() {
         <TextField value={confirmPassword} onChange={(e) => {setConfirmPassword(e.target.value)}} label='Confirm Password' />
       </CardContent>
       <CardActions>
-        <Button>Create Account</Button>
+        <Button onClick={() => saveAccount()}>Create Account</Button>
         <Button href='/'>Back to Login</Button>
       </CardActions>
     </Card>

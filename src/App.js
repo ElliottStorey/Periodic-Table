@@ -13,7 +13,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
+        <Route path='/signup' element={<Signup style={{marginTop:'5rem'}} />} />
         <Route path='/table' element={<PeriodicTable />} />
       </Routes>
     </BrowserRouter>

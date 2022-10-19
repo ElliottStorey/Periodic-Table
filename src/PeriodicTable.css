@@ -1,0 +1,227 @@
+/* Use W3 schools to look up CSS properties, values, and examples */ 
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+  h1 {
+    font-family: 'Nabla', cursive;
+    text-align: center;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Answer questions #D1-D3 on the assignment about the code below. Use this resource to help explain what the code is doing when you call two selectors like below: https://css-tricks.com/multiple-class-id-selectors/ */ 
+  li.row1{
+    grid-row: 1/2;
+  }
+  
+  li.row2{
+    grid-row: 2/3;
+  }
+  
+  li.row3{
+    grid-row: 3/4;
+  }
+  
+  li.row4{
+    grid-row: 4/5; 
+  }
+  
+  li.row5{
+    grid-row: 5/6;
+  }
+  
+  li.row6{
+    grid-row: 6/7;
+  }
+  
+  li.row7{
+    grid-row: 7/8;
+  }
+  
+  li.row8{
+    grid-row: 8/9;
+  }
+  
+  li.row9{
+    grid-row: 9/10;
+  }
+  
+  li.row10{
+    grid-row: 10/11;
+  }
+  
+  li.col1{
+    grid-column: 1/2;
+  }
+  
+  li.col2{
+    grid-column: 2/3;
+  }
+  
+  li.col3{
+    grid-column: 3/4;
+  }
+  
+  li.col4{
+    grid-column: 4/5;
+  }
+  
+  li.col5{
+    grid-column: 5/6;
+  }
+  
+  li.col6{
+    grid-column: 6/7; 
+  }
+  
+  li.col7{
+    grid-column: 7/8;
+  }
+  
+  li.col8{
+    grid-column: 8/9;
+  }
+  
+  li.col9{
+    grid-column: 9/10;
+  }
+  
+  li.col10{
+    grid-column: 10/11;
+  }
+  
+  li.col11{
+    grid-column: 11/12;
+  }
+  
+  li.col12{
+    grid-column: 12/13;
+  }
+  
+  li.col13{
+    grid-column: 13/14;
+  }
+  
+  li.col14{
+    grid-column: 14/15;
+  }
+  
+  li.col15{
+    grid-column: 15/16;
+  }
+  
+  li.col16{
+    grid-column: 16/17;
+  }
+  
+  li.col17{
+    grid-column: 17/18;
+  }
+  
+  li.col18{
+    grid-column: 18/19;
+  }
+  
+  ol {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+  }
+  /* Style the ol HTML elements as follows: 
+    1. Find an property that removes the numbering from an ordered list
+    2. Add the property display and assign a value of grid 
+    3. Use the property grid-template-columns to space out the columns in your grid setup. For the value, assign a CSS repeat function - this function will take two values 1) How many columns are in your grid? 2) How large should each column be?
+    4. Use the property grid-template-rows to space out the rows in your grid setup. For the value, assign a CSS repeat function - this function will take two values 1) How many rows are in your grid? 2) How large should each row be? 
+  
+  Use this resource for grid-template-columns: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+  */
+  
+  li {
+    width: 98px;
+    height: 98px;
+    padding: 0.5px;
+    border: 1px solid black;
+  }
+  /* Style the li elements using the CSS Box Model. Use this resource: https://www.w3schools.com/css/css_boxmodel.asp
+    1. Use the width property. What is the width of each grid?
+    2. Use the height property. What is the height of each     grid? 
+    2. Use the padding property. How much space do you want around your content? 
+    3. Use the border property. How large is your border? What type of border do you want? 
+  
+  NOTE: You want your box model to add up to the size of the columns and rows you set up in grid-template-columns/rows
+  Grid-Column size = width value + 2 x padding + 2 x border 
+  Grid-Row size = height value + 2 x padding + 2 x border  
+  */
+  
+  /* Answer questions #D4-D5 about the CSS selectors in this piece of code. Use these two resources:
+  Multiple selectors: https://css-tricks.com/multiple-class-id-selectors/
+  First-child selector: https://www.w3schools.com/cssref/sel_firstchild.asp
+  */ 
+  li div:first-child {
+    float: right;
+    /* We want to align the number of the element to the right corner of each box. Find the property that will move text to the right hand side. Code it below */ 
+  }
+  
+  li div:nth-child(2) {
+    font-size: larger;
+    font-weight: bold;
+  }
+  /* Now we want to make the element symbol standout. In the HTML code, the element symbol is the second div element nested under an li element. Use this resource to help you: https://www.w3schools.com/cssref/sel_nth-child.asp. Then, 
+    1. Make the font larger
+    2. Make the font bold 
+  */
+  
+  .cat-unknown_probably_transition_metal {
+    background-color: turquoise;
+    opacity: 0.5;
+  }
+
+  .cat-post-transition_metal {
+    background-color: magenta;
+  }
+
+  .cat-polyatomic_nonmetal {
+    background-color: purple;
+  }
+
+  .cat-actinide {
+    background-color: beige;
+  }
+
+  .cat-unknown_but_predicted_to_be_an_alkali_metal {
+    background-color: brown;
+    opacity: 0.5;
+  }
+
+  .cat-diatomic_nonmetal {
+    background-color: red;
+  }
+
+  .cat-alkali_metal {
+    background-color: blue;
+  }
+
+  .cat-metalloid {
+    background-color: yellow;
+  }
+
+  .cat-transition_metal {
+    background-color: orange;
+  }
+
+  .cat-alkaline_earth_metal {
+    background-color: purple;
+  }
+
+  .cat-lanthanide {
+    background-color: pink;
+  }
+
+  .cat-noble_gas {
+    background-color: green;
+  }
+  /*Last required CSS styling! Notice that each element has a class assigned that identifies its category. Style each category so that the various categories look different from each other. At MINIMUM, change the background color*/
+  
